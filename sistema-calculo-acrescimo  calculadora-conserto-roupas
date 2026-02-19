@@ -1,0 +1,18 @@
+"""
+Sistema simples de cálculo de acréscimo em conserto de roupas
+Autor: Clovis
+Descrição: Calcula o valor total e aplica acréscimo de 10% se houver 3 ou mais peças
+"""
+
+PRECO_POR_PECA = 5.00
+
+quantidade = int(input("Digite a quantidade de peças: "))
+
+total = quantidade * PRECO_POR_PECA
+
+if quantidade >= 3:
+    acrescimo = total * 0.10
+    total += acrescimo
+    print(f"Acréscimo aplicado: R$ {acrescimo:.2f}")
+
+print(f"Total a pagar: R$ {total:.2f}")
